@@ -1,4 +1,6 @@
-#### **Example : running for trees with 16 leaves**
+In this folder the sequences have a fixed number (m) of aleatory mutations and the ancestral root is a sequence of length sl filled with zeros. At each bifurcation, the Hamming Distance between parent-child is exactly m, (m different indices mutate and forced to mutate in another state).
+
+### Example : running for trees with 16 leaves with ###
 
 * To run for different number of leaves change the -l to the desired value
 
