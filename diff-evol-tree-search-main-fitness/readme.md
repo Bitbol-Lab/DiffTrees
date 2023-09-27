@@ -2,11 +2,14 @@ In this folder the sequences have a fixed number (`m`) of aleatory mutations and
 
 In this folder, `sl` has to be 198, and we can either choose an alphabet size of 2, or 20. 
 
+We introduce fitness through the use of Markov chain Monte Carlo method (MCMC)
+
 ## Field ##
 * 2 letters: Field is sampled from a normal distribution N(µ=1, σ=1)
 * 20 letters alphabet: Field is inferred from beta-lactamase2
 
 ## Coupling ##
+The Coupling matrices are symmetric, this is why in the code we only iterate on the corresponding first dimension.
 * 2 letters: Coupling is created with a binary matrix. Probability that 2 positions are connected ("1"), each in a certain state is 2%. Associated Temperature = 5
 * 20 letters alphabet: Coupling is inferred from beta-lactamase2. Associated Temperature=1
 
