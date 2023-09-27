@@ -5,7 +5,7 @@ These are the requirements used when launching either one of the two files on SC
 I suggest installing jax libraries (especially with cuda, cudnn dependecies) using conda instead of pip.
 
 ### diff-evol-tree-search-main ###
-This folder is a copy of the one present in the paper with some additional functionalities, such as result vizualisation without the wandb.ai intermediary
+This folder is a copy of the one present in the paper with some additional functionalities, such as result vizualisation without the wandb.ai intermediary and other metrics resulting from several simulations
 
 ### diff-evol-tree-fitness ###
-This folder introduces fitness (both a site specific field component and/or a pairwise interaction coupling)
+This folder introduces fitness in the sequences generation (both a site specific field component and/or a pairwise interaction coupling)
