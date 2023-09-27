@@ -1,4 +1,4 @@
-In this folder the sequences have a fixed number (`m`) of aleatory mutations and the ancestral root is a sequence of length `sl` filled with zeros. At each bifurcation, the Hamming Distance between parent-child can be lower than `m`, (possible to mutate the same index twice but forced to mutate in another state), even without fitness.
+In this folder the sequences have a fixed number (`m`) of aleatory mutations and the ancestral root is an aleatory sequence of length 198, where 1000 mutations have been introduced to create an already low energy root . At each bifurcation, the Hamming Distance between parent-child can be lower than `m`, (possible to mutate the same index twice but forced to mutate in another state), even without fitness.
 
 In this folder, `sl` has to be 198, and we can either choose an alphabet size of 2, or 20. 
 
@@ -33,3 +33,5 @@ python3 train_batch_implicit_diff.py -l 16 -nl 20 -m 50 -sl 198 -tLs [0,0.005,10
 ```bash
 python3 train_batch_implicit_diff.py -l 16 -nl 20 -m 50 -sl 198 -tLs [0,0.005,10,50] -lr 0.1 -lr_seq 0.01 -field -coupling -t float64-multi-init-run -p Batch-Run-Maximum-Parsimony -alt -n "Final Run" -g 0 -e 5000 -ai 1 -ic 50
 ```
+## Output ##
+When running the code, it will create several trees (currently set to 100). 
