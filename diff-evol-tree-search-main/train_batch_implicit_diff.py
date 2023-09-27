@@ -103,7 +103,7 @@ quant_numbers_dict={
                     'best_tree_colless':[]
         }
     
-for n_simul in range(1,100):
+for n_simul in range(1,101):
 
     def generate_vmap_keys(seq_params):
         vmap_keys = {}
@@ -298,7 +298,7 @@ for n_simul in range(1,100):
         seqs    = jax.nn.one_hot(seqs, n_letters).astype(jnp.float64)
         gt_seqs = jax.nn.one_hot(gt_seqs, n_letters).astype(jnp.float64)
         
-        print(n_simul,"/120")
+        print(n_simul,"/100")
         
         #if we don't want sequences to change, set seqs to gt_seqs
         if(args['fix_seqs'] or args['initialize_seq']):
