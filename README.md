@@ -1,4 +1,4 @@
-The code is based on https://github.com/ramithuh/diff-evol-tree-search.git from Differentiable Search of Evolutionary Trees (Hettiarachchi, Swartz & Ovchinnikov, 2023). 
+The code is based on https://github.com/ramithuh/diff-evol-tree-search.git from https://www.biorxiv.org/content/10.1101/2023.07.23.550206v1
 
 ### requirements.txt ###
 These are the requirements used when launching either one of the two files on SCITAS. 
